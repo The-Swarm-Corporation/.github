@@ -2,7 +2,6 @@
 
 [![Join our Discord](https://img.shields.io/badge/Discord-Join%20our%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/swarms) [![Subscribe on YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@kyegomez3242) [![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kye-g-38759a207/) [![Follow on X.com](https://img.shields.io/badge/X.com-Follow-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/kyegomezb)
 
-
 Welcome to the Swarms Github Page! 
 
 Our mission is to advance the transition to an agentic world economy with billions of agents, orchestrating and collaborating to solve complex problems and drive innovation.
@@ -47,4 +46,4 @@ For any inquiries, please reach out to us at [kye@swarms.world](mailto:kye@swarm
 
 Together, let's build the future of autonomous agents and advance towards an agentic world economy. 🌍🤖
 
-[Visit our website](https://swarms.world)
+[Visit our website](https://swarms.ai)
