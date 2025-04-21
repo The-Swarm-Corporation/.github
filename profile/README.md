@@ -30,7 +30,7 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 Join our growing community of developers and researchers passionate about autonomous agents:
 
-- [Discord](https://discord.com/servers/agora-999382051935506503)
+- [Discord](https://discord.gg/jM3Z6M9uMq)
 - [Twitter](https://twitter.com/swarms_corp)
 - [LinkedIn](https://www.linkedin.com/company/swarms-corp)
 
