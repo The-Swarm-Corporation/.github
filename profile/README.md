@@ -20,7 +20,7 @@ We are expanding our team and looking for talented individuals passionate about 
 - **API Engineers**: Develop robust APIs to facilitate interaction between agents and external systems.
 - **AI Researchers**: Innovate and push the boundaries of what's possible with AI and machine learning in the context of agent systems.
 
-If you're interested in joining our team, please visit our [Careers Page](https://swarms.world/careers) or email us at [kye@swarms.world](mailto:kye@swarms.world) with your github account link.
+If you're interested in joining our team, please visit our [Careers Page](https://swarms.ai/hiring) or email us at [kye@swarms.world](mailto:kye@swarms.world) with your github account link.
 
 ## Contributing
 
