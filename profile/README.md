@@ -1,5 +1,3 @@
-<div align="center">
-
 # Swarms
 
 **Building and scaling Collective Super Intelligence (CSI)**
@@ -11,8 +9,6 @@
 [![X](https://img.shields.io/badge/X-@swarms__corp-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/swarms_corp)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Follow-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/swarms-corp)
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@kyegomez3242)
-
-</div>
 
 ## Mission
 
