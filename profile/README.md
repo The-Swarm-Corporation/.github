@@ -16,7 +16,9 @@ No single model will solve every problem. Our mission is to build and scale **Co
 
 We build the infrastructure for it: open-source frameworks for orchestrating agents, production systems that run them at scale, and research that measures when and why many agents beat one.
 
-## Start here
+## Quick start
+
+### Swarms (Python)
 
 ```bash
 pip install -U swarms
@@ -30,6 +32,84 @@ writer = Agent(agent_name="Writer", model_name="gpt-5.4")
 
 swarm = SequentialWorkflow(agents=[researcher, writer])
 print(swarm.run("Explain how swarms of agents outperform a single model."))
+```
+
+### Swarms API
+
+Run agents and swarms in the cloud with no infrastructure to manage. Get an API key from the [Swarms Platform](https://swarms.world/platform/api-keys) and read the [API docs](https://docs.swarms.ai).
+
+```bash
+pip install -U swarms-client
+```
+
+```python
+import os
+from swarms_client import SwarmsClient
+
+client = SwarmsClient(api_key=os.getenv("SWARMS_API_KEY"))
+
+result = client.swarms.run(
+    name="Financial Analysis Swarm",
+    description="Market analysis swarm",
+    agents=[
+        {
+            "agent_name": "Market Analyst",
+            "system_prompt": "You are a financial analyst expert specializing in market trend analysis.",
+            "model_name": "gpt-4.1-mini",
+        },
+        {
+            "agent_name": "Economic Forecaster",
+            "system_prompt": "You are an expert in economic forecasting. Use the market analysis to provide economic predictions.",
+            "model_name": "gpt-4.1-mini",
+        },
+    ],
+    max_loops=1,
+    swarm_type="SequentialWorkflow",
+    task="Analyze the current market conditions and provide economic forecasts.",
+)
+print(result)
+```
+
+Or call the REST API directly:
+
+```bash
+curl -X POST "https://api.swarms.world/v1/agent/completions" \
+  -H "x-api-key: $SWARMS_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "agent_config": {
+      "agent_name": "Research Analyst",
+      "system_prompt": "You are a Research Analyst with expertise in data analysis and synthesis.",
+      "model_name": "claude-sonnet-5",
+      "max_loops": 1
+    },
+    "task": "What are the key trends in renewable energy adoption?"
+  }'
+```
+
+### swarms-rs (Rust)
+
+```bash
+cargo add swarms-rs anyhow
+cargo add tokio --features full
+```
+
+```rust
+use swarms_rs::llm::provider::any::AnyModel;
+use swarms_rs::structs::agent::Agent;
+
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    // Picks the provider from the model name and reads its key, here OPENAI_API_KEY.
+    let agent = AnyModel::from_model_name("openai/gpt-5.5")?
+        .agent_builder()
+        .agent_name("Researcher")
+        .system_prompt("You are a concise research assistant.")
+        .build();
+
+    println!("{}", agent.run("What is a vector database?".to_string()).await?);
+    Ok(())
+}
 ```
 
 ## Popular repositories
